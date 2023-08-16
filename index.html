@@ -4,55 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carrossel de Imagens</title>
- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 <body>
 <div class="container mt-5">
-  <div id="imageCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="imgs1.jpg" class="d-block w-100" alt="Imagem 1">
-      </div>
-      <div class="carousel-item">
-        <img src="imgs2.jpg" class="d-block w-100" alt="Imagem 2">
-      </div>
-      <div class="carousel-item">
-        <img src="imgs3.jpg" class="d-block w-100" alt="Imagem 9">
-      </div>
-      <div class="carousel-item">
-        <img src="imgs4.jpg" class="d-block w-100" alt="Imagem 9">
-      </div>
-      <div class="carousel-item">
-        <img src="imgs5.jpg" class="d-block w-100" alt="Imagem 9">
-      </div>
-      <div class="carousel-item">
-        <img src="imgs6.jpg" class="d-block w-100" alt="Imagem 9">
-      </div>
-      <div class="carousel-item">
-        <img src="imgs7.jpg" class="d-block w-100" alt="Imagem 9">
-      </div>
-      <div class="carousel-item">
-        <img src="imgs8.jpg" class="d-block w-100" alt="Imagem 9">
-      </div>
-      <div class="carousel-item">
-        <img src="imgs9.jpg" class="d-block w-100" alt="Imagem 9">
-      </div>
+  <div class="carousel-container">
+    <div class="carousel-item">
+      <img src="img1.jpg" class="d-block w-100" alt="Imagem 1">
     </div>
-    <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
+    <div class="carousel-item">
+      <img src="./img2.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="./img3.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="./img4.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="./img5.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="./img6.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="./img7.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="./img8.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <div class="carousel-item">
+      <img src="./img9.jpg" class="d-block w-100" alt="Imagem 1">
+    </div>
+    <!-- Adicione suas outras imagens aqui -->
   </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel-container').slick({
+      dots: true, // Adicione pontos de navegação (opcional)
+      arrows: true, // Adicione setas de navegação (opcional)
+      swipeToSlide: true // Permite arrastar para passar o dedo
+    });
+  });
+</script>
 </body>
 </html>
