@@ -17,6 +17,7 @@
 </head>
 <body>
     <div class="container mt-5">
+        <h1 class="text-center">Cardápio da Lanchonete</h1>
         
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -28,7 +29,8 @@
                 <div class="swiper-slide"><img src="./img5.jpg" alt="Item 5"></div>
                 <div class="swiper-slide"><img src="./img6.jpg" alt="Item 6"></div>
                 <div class="swiper-slide"><img src="./img7.jpg" alt="Item 7"></div>
-
+                <div class="swiper-slide"><img src="./img8.jpg" alt="Item 8"></div>
+                <div class="swiper-slide"><img src="./img9.jpg" alt="Item 9"></div>
                 <!-- ... E assim por diante -->
             </div>
             
@@ -45,6 +47,7 @@
         // Inicializar o Swiper quando a página estiver pronta
         document.addEventListener("DOMContentLoaded", function () {
             var swiper = new Swiper(".swiper-container", {
+                slidesPerView: 1, // Mostrar apenas uma imagem por vez
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
