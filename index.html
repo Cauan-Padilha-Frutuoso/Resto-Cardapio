@@ -12,32 +12,44 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
     <style>
-        /* Estilos personalizados, se necessário */
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .swiper-slide img {
+            max-height: 100%;
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Cardápio da Lanchonete</h1>
-        
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <!-- Inclua suas imagens aqui -->
-                <div class="swiper-slide"><img src="./img1.jpg" alt="Item 1"></div>
-                <div class="swiper-slide"><img src="./img2.jpg" alt="Item 2"></div>
-                <div class="swiper-slide"><img src="./img3.jpg" alt="Item 3"></div>
-                <div class="swiper-slide"><img src="./img4.jpg" alt="Item 4"></div>
-                <div class="swiper-slide"><img src="./img5.jpg" alt="Item 5"></div>
-                <div class="swiper-slide"><img src="./img6.jpg" alt="Item 6"></div>
-                <div class="swiper-slide"><img src="./img7.jpg" alt="Item 7"></div>
-                <div class="swiper-slide"><img src="./img8.jpg" alt="Item 8"></div>
-                <div class="swiper-slide"><img src="./img9.jpg" alt="Item 9"></div>
-                <!-- ... E assim por diante -->
-            </div>
-            
-            <!-- Navegação (botões) -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Inclua suas imagens aqui -->
+            <div class="swiper-slide"><img src="./img1.jpg" alt="Item 1"></div>
+            <div class="swiper-slide"><img src="./img2.jpg" alt="Item 2"></div>
+            <div class="swiper-slide"><img src="./img3.jpg" alt="Item 3"></div>
+            <div class="swiper-slide"><img src="./img4.jpg" alt="Item 4"></div>
+            <div class="swiper-slide"><img src="./img5.jpg" alt="Item 5"></div>
+            <div class="swiper-slide"><img src="./img6.jpg" alt="Item 6"></div>
+            <div class="swiper-slide"><img src="./img7.jpg" alt="Item 7"></div>
+            <div class="swiper-slide"><img src="./img8.jpg" alt="Item 8"></div>
+            <div class="swiper-slide"><img src="./img9.jpg" alt="Item 9"></div>
+            <!-- ... E assim por diante -->
         </div>
+        
+        <!-- Navegação (botões) -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
 
     <!-- Link para o JavaScript do Swiper (via CDN) -->
@@ -47,7 +59,6 @@
         // Inicializar o Swiper quando a página estiver pronta
         document.addEventListener("DOMContentLoaded", function () {
             var swiper = new Swiper(".swiper-container", {
-                slidesPerView: 1, // Mostrar apenas uma imagem por vez
                 navigation: {
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
